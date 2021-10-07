@@ -1,7 +1,11 @@
 package app;
+import input.UserInput;
+import java.util.Scanner;
 
 public class Controller {
     public static void main(String[] args) {
+
+        Scanner mainMenu = new Scanner(System.in);
 
         //Display Welcome & Main Menu
         System.out.println("-----------------------------------------");
@@ -14,6 +18,8 @@ public class Controller {
                 3 - Deposit Money
                 4 - Withdraw Money
                 """);
-        System.out.println("Option: ");
+        System.out.print("Option: ");
+        UserInput.mainMenuUserInput();
+        System.out.print("\n");
     }
 }
