@@ -1,6 +1,7 @@
 package app;
-import input.UserInput;
 import java.util.Scanner;
+import input.UserInputValidator;
+import input.SelectionRedirect;
 
 public class Controller {
     public static void main(String[] args) {
@@ -19,7 +20,8 @@ public class Controller {
                 4 - Withdraw Money
                 """);
         System.out.print("Option: ");
-        UserInput.mainMenuUserInput();
-        System.out.print("\n");
+        SelectionRedirect.mainMenuRedirect();
+        //UserInputValidator.mainMenuValidator();
+        System.out.println("");
     }
 }
